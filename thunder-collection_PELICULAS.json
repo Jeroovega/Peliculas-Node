@@ -1,0 +1,79 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "PELICULAS",
+    "dateExported": "2023-11-17T23:03:00.090Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "af9a42ab-ea0e-4e69-8b17-cfc14f8d0aad",
+            "colId": "9a21c46c-3d84-4eb9-a8a5-809e60e3bf9f",
+            "containerId": "",
+            "name": "READ ALL - PELICULAS",
+            "url": "http://localhost:8080/api/peliculas/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-17T22:58:19.488Z",
+            "modified": "2023-11-17T22:58:19.488Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ead2a2d5-deb1-46d8-9e1e-5d9ec7efe5fe",
+            "colId": "9a21c46c-3d84-4eb9-a8a5-809e60e3bf9f",
+            "containerId": "",
+            "name": "READ ONE - PELICULAS",
+            "url": "http://localhost:8080/api/peliculas/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-17T22:59:00.177Z",
+            "modified": "2023-11-17T23:00:59.284Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0dcaf4cb-4cd0-486c-b9c8-130c02d3d6a9",
+            "colId": "9a21c46c-3d84-4eb9-a8a5-809e60e3bf9f",
+            "containerId": "",
+            "name": "CREATE - PELICULAS",
+            "url": "http://localhost:8080/api/peliculas",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-17T23:00:03.658Z",
+            "modified": "2023-11-17T23:01:32.499Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e0761b36-19d8-43aa-a7c0-39a600880492",
+            "colId": "9a21c46c-3d84-4eb9-a8a5-809e60e3bf9f",
+            "containerId": "",
+            "name": "UPDATE - PELICULAS",
+            "url": "http://localhost:8080/api/peliculas/1",
+            "method": "PUT",
+            "sortNum": 35000,
+            "created": "2023-11-17T23:02:09.791Z",
+            "modified": "2023-11-17T23:02:09.791Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9221d1bb-6805-400b-9094-dd622aaf9368",
+            "colId": "9a21c46c-3d84-4eb9-a8a5-809e60e3bf9f",
+            "containerId": "",
+            "name": "DELETE - PELICULAS",
+            "url": "http://localhost:8080/api/peliculas/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-11-17T23:00:19.851Z",
+            "modified": "2023-11-17T23:00:19.851Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

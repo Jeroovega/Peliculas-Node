@@ -1,0 +1,47 @@
+<h1>Registro</h1>
+<hr>
+
+{{!-- Mensaje de error --}}
+{{#each errors}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{this.msg}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        </button>
+    </div>
+{{/each}}
+
+
+
+{{!-- Formulario de registro --}}
+
+<form action="/api/auth/signup" method="POST" class="border border-success p-5 w-50 m-auto">
+
+    {{!-- Nombre --}}
+    <div class="mb-3">
+        <label for="lbl-nombre" class="form-label">Nombre:</label>
+        <input name="name" type="text" class="form-control" id="lbl-nombre" placeholder="Ingrese su nombre" value="{{name}}">
+    </div>
+
+    {{!-- Correo --}}
+    <div class="mb-3">
+        <label for="lbl-correo" class="form-label">Correo electrónico:</label>
+        <input name="email" type="text" class="form-control" id="lbl-correo" placeholder="Ingrese su correo" value="{{email}}">
+    </div>
+
+    {{!-- Password --}}
+    <div class="mb-3">
+        <label for="lbl-password" class="form-label">Contraseña:</label>
+        <input name="password" type="text" class="form-control" id="lbl-password" placeholder="Ingrese su contraseña">
+    </div>
+
+    {{!-- Reingresar Password --}}
+    <div class="mb-3">
+        <label for="lbl-confirm-password" class="form-label">Reingrese su Contraseña:</label>
+        <input name="confirm_password" type="text" class="form-control" id="lbl-confirm-password" placeholder="Reingrese su contraseña nuevamente">
+    </div>
+    
+    {{!-- Botón de envío --}}
+    <button class="btn btn-success">
+        SignUp
+    </button>
+</form>

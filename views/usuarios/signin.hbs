@@ -1,0 +1,19 @@
+<h1>Logueo</h1>
+<hr>
+
+<form action="/api/auth/signin" method="POST" class="border border-warning p-5 w-50 m-auto">
+    {{!-- Correo --}}
+    <div class="mb-3">
+        <label for="lbl-correo" class="form-label">Correo electrónico:</label>
+        <input name="email" type="text" class="form-control" id="lbl-correo" placeholder="Ingrese su correo">
+    </div>
+    {{!-- Password --}}
+    <div class="mb-3">
+        <label for="lbl-password" class="form-label">Password:</label>
+        <input name="password" type="text" class="form-control" id="lbl-password" placeholder="Ingrese su contraseña">
+    </div>
+    {{!-- Botón de envío --}}
+    <button class="btn btn-warning">
+        SignIn
+    </button>
+</form>

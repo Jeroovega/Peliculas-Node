@@ -1,0 +1,42 @@
+<h1 class="display-1 m-4">{{titulo}}</h1>
+<hr>
+
+<a href="/api/peliculas/create" class="btn btn-dark">Crear película</a>
+<hr>
+{{#if nombre}}
+<div>
+    {{nombre}}
+    <a href="/api/auth/logout">Desloguearme</a>
+</div>
+{{/if}}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Título</th>
+            <th scope="col">Año</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {{#each peliculas}}
+        <tr>
+            <td scope="row">{{this.title}}</td>
+            <td colspan="row">{{this.year}}</td>
+            <td scope="row">
+                <a class="btn btn-info" href="/api/peliculas/show/{{this._id}}">Mostrar</a>
+                <a class="btn btn-warning" href="/api/peliculas/edit/{{this._id}}">Editar</a>
+
+                {{!-- Con la libreria methodoverride cambia el método post del formulario por el DELETE (?_method=DELETE) --}}
+                <form action="/api/peliculas/{{this._id}}?_method=DELETE" method="post" class="d-inline">
+                    {{!-- <input type="hidden" name="id" value="{{this._id}}"> --}}
+                    <button class="btn btn-danger" href="/api/peliculas">Eliminar</button>
+                </form>
+            </td>
+        </tr>
+
+
+        {{/each}}
+
+    </tbody>
+</table>
